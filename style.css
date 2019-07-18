@@ -121,7 +121,7 @@ li{
 .info-hero {
     background-color: #F7B617;
     width: 80vw;
-    height: 52vh;
+    height: auto;
 } 
 
 #info-mobile {
