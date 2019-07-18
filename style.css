@@ -39,8 +39,7 @@ nav {
     display: flex;
     padding: 0;
     list-style: none;
-    /* background-color:crimson ; */
- }
+}
 
  a {
      text-decoration: none;
@@ -122,15 +121,36 @@ li{
 .info-hero {
     background-color: #F7B617;
     width: 80vw;
-    height: 50vh;
+    height: 52vh;
 } 
 
 #info-mobile {
-    display: flex;
+    display: block;
+    padding: 2rem;
+}
+
+#info-mobile h1 {
+    width: 80%;
+    color: white;
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+    line-height: 3rem;
+}
+
+#info-mobile div {
+    margin-bottom: 4rem;
 }
 
 #info-desktop {
     display: none;
+}
+
+#info-desktop a:last-of-type, #info-mobile a {
+    padding: 0.8rem;
+    color: #1C1C1C;
+    background-color: white;
+    font-weight: 700;
+    border-radius: 10px;
 }
 
 
@@ -208,13 +228,13 @@ li{
         font-size: 1rem;
     }
 
-    #info-desktop a:last-of-type {
+    /* #info-desktop a:last-of-type {
         padding: 0.8rem;
         color: #1C1C1C;
         background-color: white;
         font-weight: 700;
         border-radius: 10px;
-    }
+    } */
 
     #info-desktop div:nth-child(2) p {
         display: inline;
