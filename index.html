@@ -18,13 +18,15 @@
             <figure>
                 <a href="#"><img src="img/logo.png" alt="logo labcar"></a>   
             </figure>
+
+            <!-- MOBILE -->
             <ul class="menu">
                <li>
                    <i class="fas fa-bars"></i>
                     <ul>
                         <li><a href="#">Viaja</a></li>
                         <li><a href="#">Conduce</a></li>
-                        <li><a href="#">Inicia Sesión</a></li>
+                        <li><a href="#new-account" class="new-session">Inicia Sesión</a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,28 +36,76 @@
             <ul class="menu-desktop">
                 <li><a href="#">Viaja</a></li>
                 <li><a href="#">Conduce</a></li>
-                <li><a href="#">Inicia Sesión</a></li>
+                <li><a href="#new-account" class="new-session">Inicia Sesión</a></li>
             </ul>
         </nav>        
     </header>
 
     <!--MAIN-->
     <main>
-        <section>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="info-hero">
+
+                <div id="info-desktop">
+                    <div>
+                        <h1>Disfruta del viaje.</h1>
+                        <h2>Eres dueño de tu tiempo.</h2>
+                    </div>
+                    <div>
+                        <p>Viaja con</p>
+                        <img src="img/logo-blanco.png" alt="logo blanco">
+                    </div>
+                    <a href="#new-account">REGÍSTRATE</a>
+                    <div>
+                        <img src="img/line.svg" alt="line"> 
+                        <p>O bien</p>
+                        <img src="img/line.svg" alt="line">
+                    </div>
+                    <a href="">Conviértete en un conductor</a>
+                </div>
+
+                <div id="info-mobile">
+
+                </div>
+            </div>
 
         </section>
-        <section>
+
+        <!--INFO-->
+        <section class="information">
 
         </section>
-        <section>
+        <section class="drive">
 
         </section>
-        <section>
+        <section class="rate">
 
         </section>
+
+
+        <!-- MODALES -->
+        <section id="new-account" class="hide">
+            <div>
+                <a href="">X</a>
+
+            </div>
+            <div>
+                <a href="#account">¿Ya tienes una cuenta?</a>
+                <p>Forgot password?</p><a href="#">Click Here</a>
+
+            </div>
+        </section>
+        
+        <section id="account" class="hide">
+
+        </section>
+        <section class="hide"></section>
     </main>
     <footer>
 
-    </footer>        
+    </footer> 
+    
+    <script src="app.js"></script>
 </body>
 </html>
