@@ -133,7 +133,7 @@ li{
     display: flex;
     padding: 3rem 0;
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     background-color: #F7B617;
 }
 
@@ -141,6 +141,10 @@ li{
     background-image: url(img/conduce.jpg);
 }
 
+h3.mobile-2 {
+    flex-direction: column;
+    align-items: flex-end;
+}
 
 /* HERO */
 
@@ -182,9 +186,16 @@ li{
 
 /*INFORMATION*/
 
+.information {
+    flex-direction: column;
+    justify-content: center;
+}
+
 .general-info {
     display: flex;
+    flex-direction: column;
     width: 90vw;
+    height: 70vh;
     border-color:  white;
     border-style: solid;
     border-width: 0.1rem;
@@ -202,14 +213,19 @@ li{
 }
 
 
-.general-info div:first-of-type {
+.desktop-2 {
     display: none;
 }
 
-.general-info div:last-of-type {
+.mobile-2 {
     display: flex;
+    color: white;
+    justify-content: center;
 }
 
+div.mobile-2 {
+    margin-top: 3rem;
+}
 
 
 /* HIDE */
@@ -336,6 +352,7 @@ li{
 
 
     .general-info {
+        flex-direction: row;
         width: 80vw;
         justify-content: flex-start;
         margin: 0;
@@ -348,14 +365,14 @@ li{
     }
 
     
-    .general-info div:first-of-type {
+    .desktop-2 {
         display: block;
         width: 40vw;
         margin-right: 10vw;
 
     }
 
-    .general-info div:last-of-type {
+    .mobile-2 {
         display: none;
     }
     
