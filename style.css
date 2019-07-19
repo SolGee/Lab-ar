@@ -176,12 +176,13 @@ h3.mobile-2 {
     display: none;
 }
 
-#info-desktop a:last-of-type, #info-mobile a {
+.white-button {
     padding: 0.8rem;
     color: #1C1C1C;
     background-color: white;
     font-weight: 700;
     border-radius: 10px;
+    text-align: center;
 }
 
 /*INFORMATION*/
@@ -292,6 +293,20 @@ div.mobile-2 {
     color: white;
 }
 
+.rate-rute a {
+   display: flex;
+   justify-content: space-around;
+}
+
+.general-rate {
+    display: flex;
+}
+
+.rate-rute a {
+    margin: 2rem auto;
+    width: 25vw;
+}
+
 /* HIDE */
 .hide {
     display: none;
@@ -348,10 +363,6 @@ div.mobile-2 {
 
     .drive  {
         background-position: center center;
-    }
-
-    .rate {
-
     }
 
     .drive, .rate, .information {
@@ -462,7 +473,35 @@ div.mobile-2 {
         display: block;
         width: 40%;
     }
-        
- 
+     
+    .general-rate {
+        display: flex;
+        margin: 0 auto;
+    }
 
+    .rate-rute, .rate-map {
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        justify-content: space-around;
+    }
+
+    .rate-map {
+        border-color: white;
+        border-style: solid;
+        border-width: 0.1rem;  
+    }
+
+    .rate-map iframe {
+        margin: 1rem auto;
+    }
+
+    .rate-rute input {
+        width: 80%;
+    }
+ 
+    .rate-rute a {
+        width: 10vw;
+        margin: 0 auto;
+    }
 }
