@@ -119,14 +119,15 @@ li{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100vh;
     width: 100vw;
-    background-size: 100vw 100vh;
+    /* background-size: 100vw 100vh; */
+    background-size: cover;
     
 }
 
 .hero {
     background-image: url(img/taxi.jpg);
+    height: 100vh;
 }
 
 .information, .rate {
@@ -139,6 +140,7 @@ li{
 
 .drive {
     background-image: url(img/conduce.jpg);
+    height: 50vh;
 }
 
 h3.mobile-2 {
@@ -277,10 +279,17 @@ div.mobile-2 {
         color: #191C26;
     }
     
-    .hero, .drive {
+    .hero {
         background-position: center bottom;
-        background-size: cover;
         height: 100vh;
+    }
+
+    .drive  {
+        background-position: center center;
+    }
+
+    .drive, .rate, .information {
+        height: 80vh;
     }
 
     
