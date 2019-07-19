@@ -131,9 +131,9 @@ li{
 }
 
 .information, .rate {
+    display: flex;
     padding: 3rem 0;
     width: 100vw;
-    height: 100vh;
     background-color: #F7B617;
 }
 
@@ -189,6 +189,7 @@ h3.mobile-2 {
 .information {
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
 }
 
 .general-info {
@@ -232,6 +233,7 @@ div.mobile-2 {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2rem;
 }
@@ -252,6 +254,42 @@ div.mobile-2 {
     color: #000;
     font-weight: 700;
     border-radius: 1rem;
+}
+
+/* RATE */
+
+.rate {
+    height: 80vh;
+}
+
+.rate-map {
+    display: none;
+}
+
+.rate-rute {
+    padding: 3rem;
+}
+
+.rate-rute label {
+    margin: 2rem 0;
+    display: block;
+}
+
+.rate-rute input {
+    margin-left: 1rem;
+    height: 3rem;
+    width: 60vw;
+    color: white;
+    background-color: #F7B617;
+    border-color:  white;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 0.8rem;
+    padding-left: 1rem;
+}
+
+.rate-rute input::-webkit-input-placeholder {
+    color: white;
 }
 
 /* HIDE */
@@ -312,11 +350,14 @@ div.mobile-2 {
         background-position: center center;
     }
 
+    .rate {
+
+    }
+
     .drive, .rate, .information {
         height: 80vh;
     }
 
-    
     .info-hero {
         width: 40vw;
         height: auto;
@@ -416,5 +457,12 @@ div.mobile-2 {
     .general-drive p {
         font-size: 1.5rem;
     }
-    
+
+    .rate-rute, .rate-map  {
+        display: block;
+        width: 40%;
+    }
+        
+ 
+
 }
