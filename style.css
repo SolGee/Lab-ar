@@ -228,13 +228,9 @@ li{
         font-size: 1rem;
     }
 
-    /* #info-desktop a:last-of-type {
-        padding: 0.8rem;
-        color: #1C1C1C;
-        background-color: white;
-        font-weight: 700;
-        border-radius: 10px;
-    } */
+    #info-desktop a:first-of-type:hover{
+        text-decoration-line: underline;
+    }
 
     #info-desktop div:nth-child(2) p {
         display: inline;
@@ -249,11 +245,17 @@ li{
     }
 
     #info-desktop div:last-of-type {
-        margin-bottom: 2rem;
+        display: flex;
+        background: url(img/line.svg)  repeat-x 100% bottom;
+        margin-bottom: 3rem;
+        width: 90%;
     }
-
+    
     #info-desktop div:last-of-type p {
-        margin: 0 1rem;
+        display: flex;
+        margin: 0 auto;
+        background-color: #F7B617;
+        padding: 0.2rem 3rem;
     }
 
     #info-desktop div:last-of-type * {
