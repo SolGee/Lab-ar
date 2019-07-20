@@ -379,6 +379,10 @@ div.mobile-2 {
     margin-top: 15%;
 }
 
+.stores * {
+    width: 20vw;
+}
+
 .social-media * {
     margin-right: 1rem;
 }
