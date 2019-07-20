@@ -436,7 +436,7 @@ div.mobile-2 {
         display: inline;
     }
     
-    .menu-desktop a:hover {
+    .menu-desktop a:hover, .footer-list li:hover, .social-media i:hover {
         color: #F7B617;
         cursor: pointer;
     }
@@ -486,7 +486,7 @@ div.mobile-2 {
         font-size: 1rem;
     }
 
-    #info-desktop a:first-of-type:hover{
+    #info-desktop a:first-of-type:hover, .white-button:hover, .general-drive a:hover{
         text-decoration-line: underline;
     }
 
