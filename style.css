@@ -601,5 +601,7 @@ div.mobile-2 {
     }
     .social-media {
         order: 0;
+        margin-left: 0;
+        align-items: flex-end;
     }
 }
