@@ -321,7 +321,6 @@ div.mobile-2 {
 }
 
 .footer-list ul {
-    width: 50%;
     padding: 0;
     margin: 0;
     min-width: 30vh;
@@ -371,10 +370,13 @@ div.mobile-2 {
 
 .social-media, .stores {
     display: flex;
+    height: 50%;
 }
 
 .stores {
     align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: 15%;
 }
 
 .social-media * {
@@ -383,8 +385,7 @@ div.mobile-2 {
 
 .social-media {
     order: 1;
-    justify-content: flex-start;
-    margin-left: -30vw;
+    justify-content: flex-end;
 }
 
 .end-footer {
@@ -457,8 +458,9 @@ div.mobile-2 {
     }
 
     .drive, .rate, .information {
-        height: 80vh;
+         min-height: 80vh;
     }
+
 
     .info-hero {
         width: 40vw;
