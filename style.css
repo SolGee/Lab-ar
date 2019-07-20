@@ -305,6 +305,7 @@ div.mobile-2 {
 .rate-rute a {
     margin: 2rem auto;
     width: 25vw;
+    min-width: 200px;;
 }
 
 /*FOOTER*/
@@ -325,6 +326,11 @@ div.mobile-2 {
     margin: 0;
     min-width: 30vh;
 }
+
+.footer-list div:last-of-type ul {
+    display: none;
+}
+
 .footer-list li {
     margin-bottom: 0.8rem;
 }
@@ -337,6 +343,10 @@ div.mobile-2 {
 
  figure {
     margin: 0;
+}
+
+.head-footer {
+    background: url(img/line.svg)  repeat-x 100% bottom;
 }
 
 .head-footer figure img:first-of-type {
@@ -356,10 +366,14 @@ div.mobile-2 {
 
 .head-footer figure * {
     display: block;
+    padding-bottom: 1rem;
 }
 
 .social-media, .stores {
     display: flex;
+}
+
+.stores {
     align-items: flex-end;
 }
 
@@ -367,8 +381,19 @@ div.mobile-2 {
     margin-right: 1rem;
 }
 
-.end-footer p {
+.social-media {
+    order: 1;
+    justify-content: flex-start;
+    margin-left: -30vw;
+}
+
+.end-footer {
    text-align: center;
+   background: url(img/line.svg)  repeat-x 100% top;
+}
+
+.end-footer p {
+    padding-top: 1rem;
 }
 
 
@@ -569,5 +594,12 @@ div.mobile-2 {
     .rate-rute a {
         width: 10vw;
         margin: 0 auto;
+    }
+
+    .footer-list div:last-of-type ul {
+        display: block;
+    }
+    .social-media {
+        order: 0;
     }
 }
