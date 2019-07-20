@@ -348,6 +348,7 @@ div.mobile-2 {
     
     .menu-desktop a:hover {
         color: #F7B617;
+        cursor: pointer;
     }
     
     .menu-desktop a {
