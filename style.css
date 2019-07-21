@@ -403,11 +403,62 @@ div.mobile-2 {
     padding-top: 1rem;
 }
 
+/* MODALS */
+
+#account, #new-account {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.login, .register {
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.user {
+    display: flex;
+    height: 30%;
+    background: url(img/line.svg)  repeat-x 100% bottom;
+    flex-direction: row;
+}
+
+.user div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-pic {
+    width: 60%;
+}
+
+.user div:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+
+.login {
+    background-color: #08AC9D;
+    padding: 1.5rem;
+}
+
+
+
+.register {
+    background-color: #A9A9A9;
+}
 
 /* HIDE */
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
 /*RESPONSIVE*/
 
@@ -626,5 +677,13 @@ div.mobile-2 {
 
     .social-media, .stores {
        height: auto;
+    }
+
+    .login {
+        width: 55vw;
+    }
+    
+    .register {
+        width: 40vw;    
     }
 }
