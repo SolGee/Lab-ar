@@ -331,7 +331,7 @@ div.mobile-2 {
 }
 
 .footer-list li {
-    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
 }
 
 .stores figure * {
@@ -354,8 +354,8 @@ div.mobile-2 {
 
 .body-footer {
     display: flex;
-    flex-direction: row;
-    margin: 2rem 0;
+    /* flex-direction: row; */
+    margin: 1rem 0;
 }
 
 .body-footer div {
@@ -381,6 +381,7 @@ div.mobile-2 {
 
 .stores * {
     width: 20vw;
+    max-width: 10rem;
 }
 
 .social-media * {
@@ -605,9 +606,24 @@ div.mobile-2 {
     .footer-list div:last-of-type ul {
         display: block;
     }
+
+    
+    .stores {
+        margin-top: 0;
+    }
+    
+    .stores * {
+        width: auto;
+    }
+    
     .social-media {
         order: 0;
         margin-left: 0;
+        justify-content: flex-start;
         align-items: flex-end;
+    }
+
+    .social-media, .stores {
+       height: auto;
     }
 }
