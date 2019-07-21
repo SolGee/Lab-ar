@@ -337,7 +337,7 @@ div.mobile-2 {
 .stores figure * {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
  figure {
@@ -380,8 +380,7 @@ div.mobile-2 {
 }
 
 .stores * {
-    width: 20vw;
-    max-width: 10rem;
+    width: 30vw;
 }
 
 .social-media * {
@@ -391,6 +390,8 @@ div.mobile-2 {
 .social-media {
     order: 1;
     justify-content: flex-end;
+    margin-left: -25vw;
+    margin-top: 0.8rem;
 }
 
 .end-footer {
