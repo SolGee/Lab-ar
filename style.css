@@ -459,9 +459,7 @@ div.mobile-2 {
     display: flex;
 }
 
-#close-login {
-    justify-content: flex-end;
-}
+
 
 .user-pic {
     justify-content: center;
@@ -557,6 +555,67 @@ div.mobile-2 {
 .register, .driver {
     background-color: rgb(130, 129, 129);
     padding: 1rem 1.5rem;
+}
+
+.register div:first-of-type {
+    width: 100%;
+}
+
+.close-modals {
+    display: flex;
+    font-weight: 700;
+    justify-content: flex-end;
+    margin: 0;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.close {
+
+    color: #434343;
+}
+
+#sing-in {
+    color: white;
+    background-color: #000;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+    text-align:center;
+    /* margin-top: 1rem; */
+}
+
+.register div:first-of-type p {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    /* background-color: coral; */
+}
+
+.register-form fieldset {
+    display: flex;
+    height: 90%;
+    /* justify-content: center; */
+    margin-bottom: 0.5rem;
+    /* border: none; */
+}
+/* 
+.register-form fieldset:first-of-type {
+    flex-direction: row;
+} */
+
+.register-form input {
+    width: 100%;
+    border: none;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    height: 1.5rem;;
+    border-radius: 0.2rem;
 }
 
 /* HIDE */
@@ -793,7 +852,7 @@ div.mobile-2 {
     }
 
     .login, .register {
-        height: 70vh;
+        height: auto;
     }
 
     .user-password {
@@ -805,30 +864,9 @@ div.mobile-2 {
         margin: 1rem auto;
     }
 
-    .register-form form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .register-form fieldset {
-        display: flex;
-        justify-content: center;
-        /* border: none; */
-    }
-    
     .register-form fieldset:first-of-type input{
         width: 40%;
-
-    }
-
-    .register-form fieldset:last-of-type input {
-        width: 100%;
+    
     }
     
-    .register-form input {
-        border: none;
-        margin-bottom: 1rem;
-        height: 1.5rem;;
-        border-radius: 0.2rem;
-    }
 }

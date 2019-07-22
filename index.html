@@ -24,9 +24,9 @@
                <li>
                    <i class="fas fa-bars"></i>
                     <ul>
-                        <li><a href="#">Viaja</a></li>
-                        <li><a href="#">Conduce</a></li>
-                        <li><a href="#new-account" class="new-session">Inicia Sesión</a></li>
+                        <li><a href="#new-account" id="new-session-mobile">Viaja</a></li>
+                        <li><a href="#become-driver" id="drive-button-mobile" >Conduce</a></li>
+                        <li><a href="#account" id="login-button-mobile">Inicia Sesión</a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,9 +34,9 @@
             <!-- ESCRITORIO -->
             
             <ul class="menu-desktop">
-                <li><a href="#">Viaja</a></li>
-                <li><a href="#">Conduce</a></li>
-                <li><a href="#new-account" class="new-session">Inicia Sesión</a></li>
+                <li><a href="#new-account" id="new-session-desktop">Viaja</a></li>
+                <li><a href="#" id="drive-button-desktop">Conduce</a></li>
+                <li><a href="#account" id="login-button-desktop">Inicia Sesión</a></li>
             </ul>
         </nav>        
     </header>
@@ -62,7 +62,7 @@
                         <p>O bien</p>
 
                     </div>
-                    <a href="#" class="white-button">Conviértete en un conductor</a>
+                    <a href="#become-driver" id="driver-button" class="white-button">Conviértete en un conductor</a>
                 </div>
 
                 <div id="info-mobile">
@@ -132,32 +132,36 @@
 
 
         <!-- MODALES -->
-        <section id="new-account" >
+        <section id="new-account" class="hide" >
             <div class="register">
                 <div>
-                    <a href="#account">¿Ya tienes una cuenta?</a>
+                    <div class="close-modals" >
+                        <a class="close" id="close-register" href="#">X</a>
+                    </div>
+
+                    <a id="sign-in" href="#account">¿Ya tienes una cuenta?</a>
                     <p>O CREA UNA NUEVA</p>
                 </div>
                 <div class="register-form">
                     <form>
                         <fieldset>
-                                <input name="name" type="text">
-                                <input name="last-name" type="text">
+                                <input name="name" type="text" placeholder="Nombre">
+                                <input name="last-name" type="text" placeholder="Apellidos">
                         </fieldset>
                         <fieldset>  
-                            <input name="email" type="text">
-                            <input name="celphone" type="text">
-                            <input name="password" type="text">
-                            <input name="city" type="text">
-                            <input name="code" type="text">
-                            <select name="about-us" id="us">
+                            <input name="email" type="email" placeholder="Correo electrónico">
+                            <input name="celphone" type="text" placeholder="Celular">
+                            <input name="password" type="password" placeholder="Contraseña">
+                            <input name="city" type="text" placeholder="Ciudad">
+                            <input name="code" type="text" placeholder="(Opcional) Código de invitación">
+                            <select name="about-us" id="us" placeholder="">
                                 <option value="">¿Cómo te enteraste de nosotros?</option>
                                 <option value="">Redes Sociales</option>
                                 <option value="">Noticias TV</option>
                                 <option value="">Publicidad</option>
                             </select>
+                            <button type="submit">ENVIAR</button>
                         </fieldset>
-                        <button type="submit">ENVIAR</button>
                     </form>
                 </div>
             </div>
@@ -169,8 +173,8 @@
         <section id="account" class="hide">
             <div class="login">
                 <div class="user">
-                    <div id="close-login">
-                        <a href="#">X</a>
+                    <div class="close-modals" >
+                        <a class="close" id="close-login" href="#">X</a>
                     </div>
                     <div class="user-pic">
                         <i class="fas fa-user"></i>  
@@ -199,7 +203,11 @@
         </section>
 
         <section id="become-driver" class="hide">
-            <div class="driver"></div>
+            <div class="driver">
+                <div class="close-modals" >
+                        <a class="close" id="close-driver" href="#">X</a>
+                </div>
+            </div>
 
         </section>
     </main>
