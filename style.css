@@ -804,4 +804,31 @@ div.mobile-2 {
         width: 100%;
         margin: 1rem auto;
     }
+
+    .register-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register-form fieldset {
+        display: flex;
+        justify-content: center;
+        /* border: none; */
+    }
+    
+    .register-form fieldset:first-of-type input{
+        width: 40%;
+
+    }
+
+    .register-form fieldset:last-of-type input {
+        width: 100%;
+    }
+    
+    .register-form input {
+        border: none;
+        margin-bottom: 1rem;
+        height: 1.5rem;;
+        border-radius: 0.2rem;
+    }
 }

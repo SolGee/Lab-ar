@@ -134,8 +134,32 @@
         <!-- MODALES -->
         <section id="new-account" >
             <div class="register">
-                <a href="#account">¿Ya tienes una cuenta?</a>
-                <p>Forgot password?</p><a href="#">Click Here</a>
+                <div>
+                    <a href="#account">¿Ya tienes una cuenta?</a>
+                    <p>O CREA UNA NUEVA</p>
+                </div>
+                <div class="register-form">
+                    <form>
+                        <fieldset>
+                                <input name="name" type="text">
+                                <input name="last-name" type="text">
+                        </fieldset>
+                        <fieldset>  
+                            <input name="email" type="text">
+                            <input name="celphone" type="text">
+                            <input name="password" type="text">
+                            <input name="city" type="text">
+                            <input name="code" type="text">
+                            <select name="about-us" id="us">
+                                <option value="">¿Cómo te enteraste de nosotros?</option>
+                                <option value="">Redes Sociales</option>
+                                <option value="">Noticias TV</option>
+                                <option value="">Publicidad</option>
+                            </select>
+                        </fieldset>
+                        <button type="submit">ENVIAR</button>
+                    </form>
+                </div>
             </div>
 
 
@@ -174,7 +198,7 @@
 
         </section>
 
-        <section id="become-driver">
+        <section id="become-driver" class="hide">
             <div class="driver"></div>
 
         </section>
