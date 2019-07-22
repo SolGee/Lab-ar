@@ -26,8 +26,12 @@ header {
     position: sticky;
     top: 0;
     height: auto;
-    padding-bottom: 10vh;
+    padding-bottom: 3vh;
     margin: 0 auto;
+}
+
+header figure {
+    padding-top: 1rem;
 }
 
 section, nav, footer {
@@ -408,19 +412,29 @@ div.mobile-2 {
 
 /* .normal-site {
     position: absolute;
-}
+} */
 
 .modal {
     position: relative;
-} */
-
-#account, #new-account {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.login, .register {
+/* ESTILOS MODALES */
+
+#account, #new-account, #become-driver {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    /* width: 600px;
+    height: 100%; */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.login, .register, .driver {
     width: 80%;
     height: auto;
     margin: 2rem auto;
@@ -540,14 +554,15 @@ div.mobile-2 {
 
 /*REGISTER*/
 
-.register {
-    background-color: #A9A9A9;
+.register, .driver {
+    background-color: rgb(130, 129, 129);
+    padding: 1rem 1.5rem;
 }
 
 /* HIDE */
-/* .hide {
+.hide {
     display: none;
-} */
+}
 
 /*RESPONSIVE*/
 
@@ -566,6 +581,11 @@ div.mobile-2 {
         position: relative;
     }
 
+
+    header figure {
+        padding-top: 0;
+    }
+    
     .menu {
         display: none;
 }
@@ -768,7 +788,7 @@ div.mobile-2 {
        height: auto;
     }
 
-    .login, .register {
+    .login, .register, .driver {
         width: 40vw;    
     }
 
