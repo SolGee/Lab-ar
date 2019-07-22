@@ -37,6 +37,7 @@ section, nav, footer {
 }
 
 
+
 nav {
     padding: 0;
     list-style: none;
@@ -405,6 +406,14 @@ div.mobile-2 {
 
 /* MODALS */
 
+/* .normal-site {
+    position: absolute;
+}
+
+.modal {
+    position: relative;
+} */
+
 #account, #new-account {
     width: 100vw;
     height: 100vh;
@@ -418,6 +427,10 @@ div.mobile-2 {
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
+
+    -webkit-box-shadow: -5px 10px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: -5px 10px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: -5px 10px 5px 0px rgba(0,0,0,0.3)
     
 }
 
@@ -425,31 +438,107 @@ div.mobile-2 {
     display: flex;
     height: 30%;
     background: url(img/line.svg)  repeat-x 100% bottom;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .user div {
     display: flex;
+}
+
+#close-login {
     justify-content: flex-end;
 }
 
 .user-pic {
-    width: 60%;
+    justify-content: center;
+    width: 100px;
+    border-radius: 0.1rem;
+    height: auto;
+    background-color: rgb(6, 103, 95);
+    margin: 0 auto;
 }
 
-.user div:last-of-type {
-    display: flex;
-    justify-content: flex-end;
-    width: 20%;
+.user-pic i {
+    font-size: 90px;
+    margin: 0.5rem;
 }
 
 
 .login {
     background-color: #08AC9D;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.user-password {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem auto;
+    background-color: #F5F5F5;
+    border-radius: 0.5rem;
+    justify-content: center;
+    color: rgb(90, 90, 91);
+
+}
+
+.user-password div {
+    margin: 0 auto;
 }
 
 
+.user-password div:first-of-type {
+    padding:2rem 1rem 0.5rem 1rem;
+}
+
+.user-password label {
+    display: block;
+    margin-bottom: 1rem;
+    /* border-color: rgb(140, 140, 140);
+    border-style: solid;
+    border-width: 0.1rem;    */
+}
+
+.user-password label * {
+    display: inline;
+}
+
+.user-password input {
+    width: 80%;
+    height: 1.5rem; 
+    padding: 0.2rem;
+}
+
+.user-password i {
+    width: 20%;
+    background-color: #d5d5d5;
+    padding: 0.2rem;
+    margin-top: 0.1rem;
+}
+
+.user-password button {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    background-color: #F7B617;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+}
+
+.user-password p {
+    width: 80%;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+
+.user-password p a{
+    color:#690101;
+}
+
+
+ 
+
+/*REGISTER*/
 
 .register {
     background-color: #A9A9A9;
@@ -679,11 +768,20 @@ div.mobile-2 {
        height: auto;
     }
 
-    .login {
-        width: 55vw;
-    }
-    
-    .register {
+    .login, .register {
         width: 40vw;    
+    }
+
+    .login, .register {
+        height: 70vh;
+    }
+
+    .user-password {
+        width: 60%;
+    }
+
+    .user-password p {
+        width: 100%;
+        margin: 1rem auto;
     }
 }
