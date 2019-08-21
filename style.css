@@ -266,11 +266,23 @@ div.mobile-2 {
 /* RATE */
 
 .rate {
-    height: 80vh;
+    height: auto;
 }
 
 .rate-map {
-    display: none;
+    margin: 0 auto;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1rem;  
+}
+
+
+.rate-map iframe {
+    border: none; 
+    width: 90vw;
+    height: 60vh;
+    padding: none;
+
 }
 
 .rate-rute {
@@ -306,6 +318,7 @@ div.mobile-2 {
 
 .general-rate {
     display: flex;
+    flex-direction: column;
 }
 
 .rate-rute a {
@@ -421,7 +434,7 @@ div.mobile-2 {
 
 /* ESTILOS MODALES */
 
-#account, #new-account, #become-driver {
+.modal-background {
     position: absolute;
     top: 0;
     right: 0;
@@ -731,7 +744,7 @@ div.mobile-2 {
     }
 
     .drive, .rate, .information {
-         min-height: 80vh;
+         min-height: 100vh;
     }
 
 
@@ -835,31 +848,30 @@ div.mobile-2 {
         font-size: 1.5rem;
     }
 
-    .rate-rute, .rate-map  {
-        display: block;
-        width: 40%;
-    }
-     
+    
     .general-rate {
-        display: flex;
         margin: 0 auto;
-    }
-
+        flex-direction: row;
+        }
+     
+    
     .rate-rute, .rate-map {
         display: flex;
+        width: 40%;
         flex-direction: column;
         width: 35vw;
         justify-content: space-around;
     }
 
-    .rate-map {
-        border-color: white;
-        border-style: solid;
-        border-width: 0.1rem;  
-    }
+
 
     .rate-map iframe {
+        border: none;
+        width: 30vw;
+        height: 80vh;
         margin: 1rem auto;
+        padding: 0 1rem;
+
     }
 
     .rate-rute input {
