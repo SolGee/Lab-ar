@@ -42,6 +42,7 @@ section, nav, footer {
 
 
 
+
 nav {
     padding: 0;
     list-style: none;
@@ -576,18 +577,23 @@ div.mobile-2 {
     color: #434343;
 }
 
-#sing-in {
-    color: white;
-    background-color: #000;
+#sign-in {
     width: 100%;
+    background-color: #000;
     padding: 1rem 1.5rem;
     border-radius: 0.4rem;
     text-align:center;
+    cursor: pointer;
+}
+
+#sign-in a{
+    color: white;
+    width: 100%;
     /* margin-top: 1rem; */
 }
 
 .register div:first-of-type p {
-    margin: 2rem 0 0 0;
+    margin: 1rem 0;
     text-align: center;
 }
 
@@ -612,11 +618,53 @@ div.mobile-2 {
 .register-form input {
     width: 100%;
     border: none;
-    padding: 0.3rem;
+    padding: 0.2rem;
     margin-bottom: 1rem;
     height: 1.5rem;;
     border-radius: 0.2rem;
 }
+
+.select-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.select-container *, .all-driver button {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.select-container select {
+    background-color: #DDDDDD;
+}
+
+.button-send {
+    background-color: #5BC0DE;
+    border: none;
+    color: white;
+}
+
+/*MODAL DRIVER*/
+.all-driver form {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-driver form label {
+    color: rgb(20, 20, 20);
+    font-weight: 700;
+}
+
+.all-driver p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: rgb(49, 49, 49);
+}
+
 
 /* HIDE */
 .hide {
@@ -864,9 +912,14 @@ div.mobile-2 {
         margin: 1rem auto;
     }
 
-    .register-form fieldset:first-of-type input{
-        width: 40%;
-    
+    .register-form form div:first-of-type {
+        display: flex;
+        justify-content: space-between;
     }
-    
+
+    .register-form form div:first-of-type input {
+        width: 48%;
+    }
+
+
 }
