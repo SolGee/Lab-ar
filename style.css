@@ -271,6 +271,7 @@ div.mobile-2 {
 
 .rate-map {
     margin: 0 auto;
+    padding: 1rem;
     border-color: white;
     border-style: solid;
     border-width: 0.1rem;  
@@ -279,7 +280,7 @@ div.mobile-2 {
 
 .rate-map iframe {
     border: none; 
-    width: 90vw;
+    width: 80vw;
     height: 60vh;
     padding: none;
 
@@ -908,7 +909,7 @@ div.mobile-2 {
     }
 
     .login, .register, .driver {
-        width: 40vw;    
+        width: 30vw;   
     }
 
     .login, .register {
